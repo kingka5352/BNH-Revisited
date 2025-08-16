@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Jeongman Park" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bear, Ninja, Hunter</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="wrap">
+    <h2>Bear, Ninja, Hunter</h2>
+    <p class="tagline">Play against the computer!</p>
+
+    <ul class="rules">
+      <li>The Bear Beats the Hunter.</li>
+      <li>The Hunter beats the Ninja.</li>
+      <li>And the Ninja beats the Bear.</li>
+    </ul>
+
+    <p class="prompt">Click a button below to select your choice.</p>
+
+    <hr id="line-above-buttons" class="rule">
+
+    <div class="buttons">
+      <button class="btn" data-move="Bear">Bear</button>
+      <button class="btn" data-move="Ninja">Ninja</button>
+      <button class="btn" data-move="Hunter">Hunter</button>
+    </div>
+
+    <hr id="line-below-buttons" class="rule">
+
+    <div id="resultBox" class="result-box" hidden>
+      <p id="line1" class="line"></p>
+      <p id="line2" class="line"></p>
+      <p id="line3" class="line"></p>
+    </div>
+
+    <p class="scores" hidden>
+      <span>Your Wins: <span id="yourWins">0</span></span><br>
+      <span>Computer Wins: <span id="computerWins">0</span></span>
+    </p>
+
+    <div class="again">
+      <button id="playAgain" class="btn" hidden>Play Again?</button>
+    </div>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
